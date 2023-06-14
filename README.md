@@ -29,7 +29,7 @@ docker run -p 5000:5000 ali_rafieefar_graudit_image
 To use the API, use the following command:
 
 ```bash
-curl admin:secret -X POST -F "file=@<path_to_your_code_zip_file>" http://localhost:5000/endpoint
+curl -X POST -F "file=@<path_to_your_code_zip_file>" http://localhost:5000/endpoint
 ```
 
 ### Version 2
@@ -50,7 +50,7 @@ docker run -p 5000:5000 graudit_version2_ali
 To use the API, use the following command:
 
 ```bash
-curl -X POST -F "file=@<relative_or_absolute_path_to_your_project_zip_file>" http://localhost:5000/endpoint
+curl admin:secret -X POST -F "file=@<relative_or_absolute_path_to_your_project_zip_file>" http://localhost:5000/endpoint
 ```
 
 ## Final Notes
