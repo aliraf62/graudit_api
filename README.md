@@ -29,7 +29,7 @@ docker run -p 5000:5000 ali_rafieefar_graudit_image
 To use the API, use the following command:
 
 ```bash
-curl -X POST -F "file=@<path_to_your_code_zip_file>" http://localhost:5000/endpoint
+curl admin:secret -X POST -F "file=@<path_to_your_code_zip_file>" http://localhost:5000/endpoint
 ```
 
 ### Version 2
